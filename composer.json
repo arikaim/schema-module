@@ -1,0 +1,19 @@
+{
+    "name": "arikaim/schema-module",
+    "description": "Arikam schema builder module",
+    "keywords": ["Module","schema","Arikaim schema module"],
+    "type": "arikaim-module",
+    "license": "GPL-3.0-or-later",
+    "authors": [{
+        "name": "Konstantin Atanasov",
+        "email": "info@arikaim.com",
+        "homepage": "http://arikaim.com"
+    }],
+    "require": {        
+        "arikaim/installer": "*",
+        "spatie/schema-org": "^3.23.0"       
+    },
+    "extra": {     
+        "path": "schema"
+    }
+}
