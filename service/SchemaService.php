@@ -73,21 +73,6 @@ class SchemaService extends Service implements ServiceInterface
     }
 
     /**
-     * Add json to page head
-     * 
-     * @return void
-     */
-    public function addJsonToPageHead(): void
-    {
-        global $arikaim;
-
-        $json = $this->toJson();
-        if (empty($json) == false) {
-            $arikaim->get('page')->head()->addHtmlCode($json . "\n\t\t");
-        }
-    }
-
-    /**
      * Add script code to page head
      * 
      * @return void
