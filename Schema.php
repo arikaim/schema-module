@@ -23,5 +23,6 @@ class Schema extends Module
      */
     public function install()
     {        
+        $this->registerService('SchemaService');
     }
 }
