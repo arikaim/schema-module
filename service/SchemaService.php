@@ -10,6 +10,7 @@
 namespace Arikaim\Modules\Schema\Service;
 
 use Spatie\SchemaOrg\Graph;
+use Spatie\SchemaOrg\Schema;
 
 use Arikaim\Core\Service\Service;
 use Arikaim\Core\Service\ServiceInterface;
@@ -33,6 +34,17 @@ class SchemaService extends Service implements ServiceInterface
     public function boot()
     {
         $this->setServiceName('schema');
+    }
+
+    /**
+     * Create schema object
+     *
+     * @param string $name
+     * @return mixed
+     */
+    public function schema(string $name)
+    {
+        return call_user_func(Schema::class . '::' . $name);
     }
 
     /**

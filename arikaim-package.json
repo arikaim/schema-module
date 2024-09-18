@@ -2,11 +2,14 @@
     "title": "Schema.org Builder",
     "name": "schema",
     "package-type": "module",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "class": "Schema",
     "type": "package",
     "description": "Schema.org builder.",
     "repository": "https://github.com/arikaim/schema-module.git",
     "require": {
+        "composer": [
+            "spatie/schema-org"
+        ]
     }  
 }
